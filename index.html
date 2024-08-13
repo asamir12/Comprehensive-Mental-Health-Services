@@ -56,6 +56,10 @@
         align-self: start;
       }
 
+      h1 {
+        margin-left: 35%;
+      }
+
       @media (max-width: 1000px) {
         .pricing-container {
           flex-direction: column;
@@ -66,39 +70,60 @@
   </head>
 
   <body>
-    <div id="search">
+    <header>
+      <div id="search">
         <h3>
             What is your problem...
         </h3>
         <input class="search_bar" type="text" >
         <button id="chat" class="plan-button">Start live chat</button>
-    </div>
-    <div class="pricing-container">
-      <div class="pricing-plan">
-        <div class="plan-title">If you are facing: </div>
-        <div class="plan-price">Stress and depression</div>
-        <a href="./first_case.html"><button class="plan-button">Visit</button></a>
       </div>
-      <div class="pricing-plan">
-        <div class="plan-title">If you are facing: </div>
-        <div class="plan-price">Panic attack</div>
-        <a href="./second_case.html"><button class="plan-button">Visit</button></a>
+    </header>
+
+    <main>
+      <h1>
+        Most common Reports
+      </h1>
+      <div class="pricing-container">
+        <div class="pricing-plan">
+          <div class="plan-title">If you are facing: </div>
+          <div class="plan-price">Stress and depression</div>
+          <a href="./first_case.html"><button class="plan-button">Visit</button></a>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-title">If you are facing: </div>
+          <div class="plan-price">Panic attack</div>
+          <a href="./second_case.html"><button class="plan-button">Visit</button></a>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-title">If you are facing: </div>
+          <div class="plan-price">Bullying</div>
+          <a href="./third_case.html"><button class="plan-button">Visit</button></a>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-title">If you are facing: </div>
+          <div class="plan-price">Overthinking</div>
+          <a href="./fourth_case.html"><button class="plan-button">Visit</button></a>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-title">If you are facing: </div>
+          <div class="plan-price">Physical health issues</div>
+          <a href="./fifth_case.html"><button class="plan-button">Visit</button></a>
+        </div>
       </div>
-      <div class="pricing-plan">
-        <div class="plan-title">If you are facing: </div>
-        <div class="plan-price">Bullying</div>
-        <a href="./third_case.html"><button class="plan-button">Visit</button></a>
+    </main>
+    
+    <footer>
+      <h3>
+        Give us a Feedback
+      </h3>
+      <input type="text">
+      <button type="submit" class="plan-button">Send</button>
+      <div class="container"> 
+        <p>
+          &copy; 2024 Comprehensive Mental Health Service. All rights reserved.
+        </p> 
       </div>
-      <div class="pricing-plan">
-        <div class="plan-title">If you are facing: </div>
-        <div class="plan-price">Overthinking</div>
-        <a href="./fourth_case.html"><button class="plan-button">Visit</button></a>
-      </div>
-      <div class="pricing-plan">
-        <div class="plan-title">If you are facing: </div>
-        <div class="plan-price">Physical health issues</div>
-        <a href="./fifth_case.html"><button class="plan-button">Visit</button></a>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
