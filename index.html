@@ -1,156 +1,225 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprehensive Mental Health Services</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://th.bing.com/th/id/OIG3.46iQiYTWeOim9sFnesEW?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn">
     <style>
-      body {
-        font-family: "Sono", sans-serif;
-        background-image: url(https://media.istockphoto.com/id/1294477039/vector/metaphor-bipolar-disorder-mind-mental-double-face-split-personality-concept-mood-disorder-2.jpg?s=612x612&w=0&k=20&c=JtBxyFapXIA63hzZk_F5WNDF92J8fD2gIFNX3Ta4U3A=);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin: 0;
-      }
-
-      .pricing-container{
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        height: 80vh;
-        gap: 2rem;
-      }
-
-      .pricing-plan {
-        background-color: whitesmoke;
-        flex: 1;
-        text-align: center;
-        border-radius: 5px;
-        max-width: 400px;
-      }
-
-      .plan-title {
-        font-weight: bold;
-      }
-
-      .plan-price {
-        font-weight: bold;
-        font-size: 2rem;
-      }
-
-      .plan-button {
-        background-color: #001AFF;
-        color: white;
-        border-radius: 50px;
-        padding: 10px;
-        border: none;
-      }
-      
-      #chat {
-        display: inline;
-        align-self: self-end;
-      }
-      #search {
-        display: inline;
-        align-self: start;
-      }
-
-      h1 {
-        width: 30%; 
-        margin: 0 auto; 
-        background-color: aliceblue;
-        border-radius: 5px;
-        text-align: center; 
-      }
-
-      .clinic {
-        background-color: aliceblue;
-        position: absolute;
-        bottom: -120;
-        margin-left: 87%;
-        border-radius: 5px;
-      }
-
-      #clinics-button {
-        margin-left: 35%;
-      }
-
-      @media (max-width: 1000px) {
-        .pricing-container {
-          flex-direction: column;
-          height: 100%;
+        body {
+            font-family: 'Sono', sans-serif;
+            background-image: url('https://cdn.sanity.io/images/0vv8moc6/psychtimes/18558c5d86e9709750196568183fc48e4e4b34da-5760x3840.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-      }
-    </style>
-  </head>
 
-  <body>
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #search h3 {
+            margin: 0;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .search_bar {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 250px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #001AFF;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #0036d1;
+            transform: scale(1.05);
+        }
+
+        main {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 300px auto;
+            border-radius: 8px;
+            max-width: 1200px;
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .pricing-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .pricing-plan {
+            background-color: #ffffff;
+            flex: 1;
+            max-width: 300px;
+            text-align: center;
+            border-radius: 8px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+
+        .plan-title {
+            font-weight: 600;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .plan-price {
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px 20px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .clinic {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .container p {
+            margin: 0;
+            color: #333;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            #search {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search_bar {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
     <header>
-      <div id="search">
-        <h3>
-            What is your problem...
-        </h3>
-        <input class="search_bar" type="text" placeholder="Type here...">
-        <button id="chat" class="plan-button">Start live chat</button>
-      </div>
+        <div id="search">
+            <h3>What is your problem...</h3>
+            <input class="search_bar" id="search-bar" type="text" placeholder="Type here..." aria-label="Search">
+            <button id="chat">Start live chat</button>
+        </div>
     </header>
 
     <main>
-      <h1>
-        Most common Reports
-      </h1>
-      <div class="pricing-container">
-        <div class="pricing-plan">
-          <div class="plan-title">If you are facing: </div>
-          <div class="plan-price">Stress and depression</div>
-          <a href="./first_case.html"><button class="plan-button">Visit</button></a>
+        <h1>Most Common Reports</h1>
+        <div class="pricing-container">
+            <div class="pricing-plan">
+                <div class="plan-title">If you are facing:</div>
+                <div class="plan-price">Stress and Depression</div>
+                <a href="./first_case.html"><button class="plan-button">Visit</button></a>
+            </div>
+            <div class="pricing-plan">
+                <div class="plan-title">If you are facing:</div>
+                <div class="plan-price">Panic Attack</div>
+                <a href="./second_case.html"><button class="plan-button">Visit</button></a>
+            </div>
+            <div class="pricing-plan">
+                <div class="plan-title">If you are facing:</div>
+                <div class="plan-price">Bullying</div>
+                <a href="./third_case.html"><button class="plan-button">Visit</button></a>
+            </div>
+            <div class="pricing-plan">
+                <div class="plan-title">If you are facing:</div>
+                <div class="plan-price">Overthinking</div>
+                <a href="./fourth_case.html"><button class="plan-button">Visit</button></a>
+            </div>
+            <div class="pricing-plan">
+                <div class="plan-title">If you are facing:</div>
+                <div class="plan-price">Physical Health Issues</div>
+                <a href="./fifth_case.html"><button class="plan-button">Visit</button></a>
+            </div>
         </div>
-        <div class="pricing-plan">
-          <div class="plan-title">If you are facing: </div>
-          <div class="plan-price">Panic attack</div>
-          <a href="./second_case.html"><button class="plan-button">Visit</button></a>
-        </div>
-        <div class="pricing-plan">
-          <div class="plan-title">If you are facing: </div>
-          <div class="plan-price">Bullying</div>
-          <a href="./third_case.html"><button class="plan-button">Visit</button></a>
-        </div>
-        <div class="pricing-plan">
-          <div class="plan-title">If you are facing: </div>
-          <div class="plan-price">Overthinking</div>
-          <a href="./fourth_case.html"><button class="plan-button">Visit</button></a>
-        </div>
-        <div class="pricing-plan">
-          <div class="plan-title">If you are facing: </div>
-          <div class="plan-price">Physical health issues</div>
-          <a href="./fifth_case.html"><button class="plan-button">Visit</button></a>
-        </div>
-      </div>
-      
     </main>
     
     <footer>
-      <div class="clinic">
-        <h2>
-          For clinics:
-        </h2>
-        <a href="clinics.html"><button id="clinics-button" class="plan-button">Visit</button></a>
-      </div>
-      <h3>
-        Give us a Feedback
-      </h3>
-      <input type="text" placeholder="Type here...">
-      <button type="submit" class="plan-button">Send</button>
-      <div class="container"> 
-        <p>
-          &copy; 2024 Comprehensive Mental Health Service. All rights reserved.
-        </p> 
-      </div>
+        <div class="clinic">
+            <h2>For Clinics:</h2>
+            <a href="clinics.html"><button id="clinics-button">Visit</button></a>
+        </div>
+        <div>
+            <h3>Give Us Feedback</h3>
+            <input type="text" id="feedback-input" placeholder="Type here..." aria-label="Feedback">
+            <button type="submit" id="send-button">Send</button>
+        </div>
+        <div class="container">
+            <p>&copy; 2024 Comprehensive Mental Health Service. All rights reserved.</p>
+        </div>
     </footer>
-  </body>
+
+    <script>
+        document.getElementById('chat').addEventListener('click', function() {
+            alert('Starting live chat...');
+            document.getElementById('search-bar').value = '';
+        });
+
+        document.getElementById('send-button').addEventListener('click', function() {
+            alert('Feedback sent. Thank you!');
+            document.getElementById('feedback-input').value = '';
+        });
+    </script>
+</body>
 </html>
